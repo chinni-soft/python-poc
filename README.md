@@ -1,5 +1,5 @@
-# wsbackend 
-<b>NOTE: Tested below steps on Windows System</b>
+# Event CRUD opertions 
+<b>NOTE: Tested below steps on Ubuntu System</b>
 
 <h6> Install python3 <h6>
   
@@ -12,10 +12,10 @@ Run, <h6> pip install -r requirements.txt </h6>
 Run, <h6> SET FLASK_ENV=development </h6> 
 
 Before running below command ensure you create a database_name in your system and apply same db configurations over below command
-Run, <h6> SET DATABASE_URL = postgresql://username:password@localhost/dbname </h6>
+Run, <h6> SET DATABASE_URL = postgresql://username:password@localhost:port/dbname </h6>
 
 Next Run, Below commands ( This commands creates tables in database and some migrations scripts in your workspace )
-<h6> python manager.py db inint
+<h6> python manager.py db init
 
 python manager.py db migrate
 
